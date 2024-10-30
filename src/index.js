@@ -4,7 +4,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
-import App from './App';
 import theme from './theme';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -18,19 +17,51 @@ import '@fontsource/exo/300.css';
 import '@fontsource/exo/400.css';
 import '@fontsource/exo/500.css';
 import '@fontsource/exo/700.css';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+import Home from './routes/Home';
+import About from './routes/About';
+import Projects from './routes/Projects';
+import Games from './routes/Games';
+import Root from './routes/Root';
+import ErrorPage from './routes/ErrorPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/games",
+        element: <Games />,
+      }
+    ]
+  }
+]);
 
 root.render(
   <React.StrictMode>
     <head>
       <meta name="viewport" content="initial-scale=1, width=device-width" />
     </head>
-
     <ThemeProvider theme={theme}>
-      <CssBaseline enableColorScheme />
-      <App />
-    </ThemeProvider>,
+      <CssBaseline />
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
