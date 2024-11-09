@@ -9,7 +9,7 @@ const theme = createTheme({
       main: '#556cd6',
     },
     secondary: {
-      main: '#19857b',
+      main: '#FFD166',
     },
     error: {
       main: red.A400,
@@ -17,12 +17,15 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Exo',
+      // was Exo but Lexend or Atkinson Hyperlegible are more accessible 
+      // see https://fonts.google.com/knowledge/readability_and_accessibility/introducing_accessibility_in_typography
+      'Atkinson Hyperlegible',
       'Roboto',
       'Arial',
       'sans-serif',
     ].join(','),
   },
+  // spacing: (factor) => `${0.25 * factor}rem`, 
 });
 
 export default theme;
