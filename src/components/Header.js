@@ -6,28 +6,32 @@ import Stack from '@mui/material/Stack';
 import { Tabs } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 import theme from '../theme';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
   const location = useLocation();
-
-  const [value, setValue] = React.useState(
-    () => {
-      switch (location.pathname) {
-        case '/about':
-          return '2';
-        case '/projects':
-          return '3';
-        case '/games':
-          return '4';
-        default:
-          return '1';
-      }
-    }
-  );
+  const [value, setValue] = useState('1');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  useEffect(() => { 
+    setValue(
+      () => {
+        switch (location.pathname) {
+          case '/about':
+            return '2';
+          case '/projects':
+            return '3';
+          case '/games':
+            return '4';
+          default:
+            return '1';
+        }
+      }
+    );
+  }, [location.pathname]);
 
   return (
     <Stack direction='row' sx={{ width: '100%', typography: 'body1', justifyContent: 'space-between' }}>
