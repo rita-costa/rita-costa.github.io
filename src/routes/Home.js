@@ -2,10 +2,12 @@ import { Button, Container, Stack, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import RolesBanner from '../components/RolesBanner';
+import AboutThisWebsite from '../components/AboutThisWebsite';
 
 const Home = () => {
     return (
         <Container>
+        <Stack>
             <Stack direction='row' spacing={10} alignItems={'center'}>
                 <img src="/head.png" alt="logo" style={{ height: '400px' }} />
 
@@ -25,13 +27,15 @@ const Home = () => {
                             Learn more about me
                         </Button>
 
-                        <Button variant="contained" color="secondary" component={Link} to='/about'>
+                        <Button variant="contained" color="secondary" component={Link} to='/projects'>
                             Explore my projects
                         </Button>
                     </Stack>
                 </Stack>
             </Stack>
 
+            <AboutThisWebsite />
+        </Stack>
         </Container>
     );
 };
