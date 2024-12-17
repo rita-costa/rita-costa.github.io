@@ -1,36 +1,38 @@
-import { Stack, Button, Card, CardMedia, CardContent, Typography, Chip } from "@mui/material";
+import { Stack, Button, Card, CardMedia, CardContent, Typography, Chip, Box } from "@mui/material";
 import CodeIcon from '@mui/icons-material/Code';
 
 
-export default function GameCard({title, description, image, alt, date, origin, link, linkText}) {
+export default function GameCard({title, image, alt, date, origin, colour, skills, outcome}) {
 
     return (
-        <Card sx={{ minWidth: 275, pb: 5 }}>
-            <CardMedia
-                sx={{ height: 220}}
-                image={image}
-                title={alt}
-            />
-            <CardContent spacing='xs' sx={{flexGrow: 1}}>
-                <Typography variant="h6">
+        <Stack sx={{ minHeight: 400, minWidth: 275, p: 1, bgcolor: colour ? colour : 'primary.main'  }}>
+            <img src={image} alt={alt} style={{height: 220, width: '100%', objectFit: 'cover'}} />
+            <Stack direction="column"
+  spacing={2}
+  sx={{
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    flexGrow: 1,
+    p: 1
+  }}>
+                <Typography variant="h6" align="left">
                     {title}
                 </Typography>
-
+                
                 <Stack>
-                <Typography variant="overline" >
-                        <b>{date}</b>
+                    <Typography variant="body2" align="left">
+                        {origin}{date ? ", " : ""} {date}
                     </Typography>
-                    <Typography variant="overline" >
-                        {origin}
+                    <Typography variant="body2" align="left">
+                        {outcome}
+                    </Typography>
+                    <Typography variant="body2" align="left">
+                       <b>{skills}</b> 
                     </Typography>
                 </Stack>
-                
-                <Typography variant="body2">
-                    {description}
-                </Typography>
-            </CardContent>
+            </Stack>
             
-            {link && <Button size="small" href={link} target="_blank">{linkText}</Button>}
-        </Card>
+            {/* {link && <Button size="small" href={link} target="_blank">{linkText}</Button>} */}
+        </Stack>
     );
 }

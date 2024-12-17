@@ -34,7 +34,7 @@ export default function Header() {
   }, [location.pathname]);
 
   return (
-    <Stack direction='row' sx={{ width: '100%', typography: 'body1', justifyContent: 'space-between' }}>
+    <Stack direction='row' sx={{ width: '100%', typography: 'body1', justifyContent: 'space-between', mb: theme.spacing(5) }}>
       <Box sx={{ pl: theme.spacing(2), pt: theme.spacing(1) }} component={Link}
         to="/"
         onClick={(e) => handleChange(e, "1")} >

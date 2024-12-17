@@ -25,7 +25,8 @@ const theme = createTheme({
       'sans-serif',
     ].join(','),
   },
-  // spacing: (factor) => `${0.25 * factor}rem`, 
+  // spacing: (factor) => `${0.25 * factor}rem`,
+  // using h4 (34px), body1 (16px), button  (24px), and caption (12px) as base sizes
 });
 
 export default theme;

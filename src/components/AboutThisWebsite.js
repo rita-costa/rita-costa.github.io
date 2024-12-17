@@ -8,7 +8,8 @@ export default function AboutThisWebsite() {
     return (
         <Stack>
             <Typography
-                variant="h2"
+                variant="h4"
+                component="h2"
                 align='left'
                 gutterBottom                
             >

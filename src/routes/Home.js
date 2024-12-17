@@ -12,11 +12,8 @@ const Home = () => {
                 <img src="/head.png" alt="logo" style={{ height: '400px' }} />
 
                 <Stack>
-                    <Typography variant="h1" align='left'>
-                        Hi there!
-                    </Typography>
-                    <Typography variant="h6" component="h2" gutterBottom align='left'>
-                        I'm a <b>UX researcher</b> with a background in software engineering, based in <b>London, UK</b>.
+                    <Typography variant="h4" component="h2" gutterBottom align='left'>
+                        Hi there! I'm Rita, a <b>UX researcher</b> with a background in software engineering, based in <b>London, UK</b>.
                         I'm passionate about creating <b>inclusive</b> and <b>meaningful</b> digital experiences.
                     </Typography>
 

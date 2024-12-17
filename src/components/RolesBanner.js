@@ -15,15 +15,15 @@ export default function RolesBanner() {
 
     return (
         <Stack direction='row' alignItems={'center'} justifyContent={'space-around'}>
-            <Typography variant="overline"> 
+            <Typography variant="button"> 
                 User Researcher
             </Typography>
 
-            <Typography variant="overline"> 
+            <Typography variant="button"> 
                 UX Designer
             </Typography>
 
-            <Typography variant="overline" sx={{animation: 'fade-in 1s'}}> 
+            <Typography variant="button" sx={{animation: 'fade-in 1s'}}> 
                 {shownFunRole}
             </Typography>
         </Stack>

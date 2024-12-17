@@ -25,7 +25,7 @@ export default function GameCard({title, description, image, alt, link, language
                 title={alt}
             />
             <CardContent spacing='xs'>
-                <Typography variant="h6">
+                <Typography variant="h4" component="h2">
                     {title}
                 </Typography>
 
