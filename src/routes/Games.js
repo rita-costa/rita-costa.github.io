@@ -17,6 +17,7 @@ const Games = () => {
                         language="Java"
                         date="2020"
                         origin="BSc Computer Science Assignment"
+                        colour="#F0B5DF"
                     />
                 </Grid>
                 <Grid size={6}>
@@ -29,6 +30,7 @@ const Games = () => {
                         language="Python"
                         date="2016"
                         origin="High School Computer Science Project"
+                        colour="#F0D9B5"
                     />
                 </Grid>
 

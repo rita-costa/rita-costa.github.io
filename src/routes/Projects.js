@@ -6,7 +6,7 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
     return (
         <Container style={{ display: 'flex', alignItems: 'center', minHeight: '80vh'}}>
-            <Grid container spacing={1} justifyContent="center" rowSpacing={1} sx={{mb: 10}} >
+            <Grid container spacing={1} justifyContent="left" rowSpacing={1} sx={{mb: 10}} >
                 <Grid size={6}>
                    <ProjectCard
                         title="Virtual Realms: How the Online Medium Affects Character Immersion in Remote Tabletop Role-Playing Games"                        // description="Conducted an in-depth qualitative study investigating how the online medium affects players’ character immersion in remote tabletop role-playing games (TTRPGs), under submission to CHI 2025."

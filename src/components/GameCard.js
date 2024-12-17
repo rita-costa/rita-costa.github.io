@@ -2,7 +2,7 @@ import { Stack, Button, Card, CardMedia, CardContent, Typography, Chip } from "@
 import CodeIcon from '@mui/icons-material/Code';
 
 
-export default function GameCard({title, description, image, alt, link, language, date, origin}) {
+export default function GameCard({title, description, image, alt, link, language, date, origin, colour}) {
 
     const chipColour = (language) => {
         switch (language) {
@@ -15,37 +15,34 @@ export default function GameCard({title, description, image, alt, link, language
         }
     }
 
-    
-
     return (
-        <Card sx={{ minWidth: 275, pb: 5 }}>
-            <CardMedia
-                sx={{ height: 220}}
-                image={image}
-                title={alt}
-            />
-            <CardContent spacing='xs'>
-                <Typography variant="h4" component="h2">
+        <Stack sx={{ minHeight: 400, minWidth: 275, p: 1, bgcolor: colour ? colour : 'primary.main'  }}>
+            <img src={image} alt={alt} style={{height: 220, width: '100%', objectFit: 'cover'}} />
+            <Stack direction="column" spacing={2} sx={{
+                justifyContent: "space-between",
+                alignItems: "flex-start",
+                flexGrow: 1,
+                p: 1
+            }}>
+
+                <Stack direction='row' spacing={1}>
+                <Typography variant="h6" component="h2" align="left">
                     {title}
                 </Typography>
-
-                <Stack>
-                    <Typography variant="overline" >
-                        {origin} - <b>{date}</b>
-                    </Typography>
-                    {/* <Typography variant="body1" gutterBottom>
-                        {date}
-                    </Typography> */}
+                <Chip size='small' icon={<CodeIcon />} label={language} color={chipColour(language)} />
                 </Stack>
                 
-                <Chip size='small' icon={<CodeIcon />} label={language} color={chipColour(language)} sx={{mb: 2}} />
-                
-                <Typography variant="body2">
+                <Stack>
+                    <Typography variant="body2" align="left">
+                        <b>{origin}{date ? ", " : ""} {date}</b>
+                    </Typography>
+                    <Typography variant="body2" align="left">
                     {description}
-                </Typography>
-            </CardContent>
-            
-            <Button size="small" href={link} target="_blank">Go to Repository</Button>
-        </Card>
+                    </Typography>
+                </Stack>
+                
+                <Button size="small" href={link} target="_blank">Go to Repository</Button>
+            </Stack>
+        </Stack>
     );
 }

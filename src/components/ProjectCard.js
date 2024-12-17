@@ -7,14 +7,12 @@ export default function GameCard({title, image, alt, date, origin, colour, skill
     return (
         <Stack sx={{ minHeight: 400, minWidth: 275, p: 1, bgcolor: colour ? colour : 'primary.main'  }}>
             <img src={image} alt={alt} style={{height: 220, width: '100%', objectFit: 'cover'}} />
-            <Stack direction="column"
-  spacing={2}
-  sx={{
-    justifyContent: "space-between",
-    alignItems: "flex-start",
-    flexGrow: 1,
-    p: 1
-  }}>
+            <Stack direction="column" spacing={2} sx={{
+                justifyContent: "space-between",
+                alignItems: "flex-start",
+                flexGrow: 1,
+                p: 1
+            }}>
                 <Typography variant="h6" align="left">
                     {title}
                 </Typography>
