@@ -17,7 +17,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      // was Exo but Lexend or Atkinson Hyperlegible are more accessible 
+      // Atkinson Hyperlegible is more accessible 
       // see https://fonts.google.com/knowledge/readability_and_accessibility/introducing_accessibility_in_typography
       'Atkinson Hyperlegible',
       'Roboto',
