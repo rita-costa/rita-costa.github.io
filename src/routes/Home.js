@@ -17,8 +17,6 @@ const Home = () => {
                         I'm passionate about creating <b>inclusive</b> and <b>meaningful</b> digital experiences.
                     </Typography>
 
-                    <RolesBanner />
-
                     <Stack direction='row' spacing={3} alignItems={'center'}>
                         <Button variant="contained" color="secondary" component={Link} to='/about'>
                             Learn more about me

@@ -23,7 +23,7 @@ export default function RolesBanner() {
                 UX Designer
             </Typography>
 
-            <Typography variant="button" sx={{animation: 'fade-in 1s'}}> 
+            <Typography variant="button" sx={{animation: 'fade-in 2s'}}> 
                 {shownFunRole}
             </Typography>
         </Stack>
