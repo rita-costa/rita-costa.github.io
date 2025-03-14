@@ -1,6 +1,4 @@
-import { Stack, Button, Card, CardMedia, CardContent, Typography, Chip, Box } from "@mui/material";
-import CodeIcon from '@mui/icons-material/Code';
-
+import { Stack, Typography } from "@mui/material";
 
 export default function GameCard({title, image, alt, date, origin, colour, skills, outcome}) {
 
@@ -14,7 +12,7 @@ export default function GameCard({title, image, alt, date, origin, colour, skill
                 p: 1
             }}>
                 <Typography variant="h6" align="left">
-                    {title}
+                    <span class="title">{title}</span>
                 </Typography>
                 
                 <Stack>

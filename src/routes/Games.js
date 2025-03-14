@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Card, CardContent } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import GameCard from '../components/GameCard';
 import Grid from '@mui/material/Grid2';
 
@@ -40,8 +40,8 @@ const Games = () => {
                     </Typography>
 
                     <Typography variant="body1" align="center">
-                        While I am not a game developer, I have always enjoyed creating games as a way to practice programming and understand how games are built. 
-                        Games have had a significant impact on my own life and can be powerful tools for meaningful experiences and storytelling, which is why I am interested in the field.
+                        While I am not a game developer, I have always enjoyed creating games as a creative practice and to develop my programming skills.
+                        Throughout my life, games have been powerful tools for meaningful experiences and storytelling, which is why I am interested in the field.
                     </Typography>
                 </Grid>
             </Grid>

@@ -1,4 +1,4 @@
-import { Stack, Button, Card, CardMedia, CardContent, Typography, Chip } from "@mui/material";
+import { Stack, Button, Typography, Chip } from "@mui/material";
 import CodeIcon from '@mui/icons-material/Code';
 
 
@@ -27,7 +27,7 @@ export default function GameCard({title, description, image, alt, link, language
 
                 <Stack direction='row' spacing={1}>
                 <Typography variant="h6" component="h2" align="left">
-                    {title}
+                    <span class="title">{title}</span>
                 </Typography>
                 <Chip size='small' icon={<CodeIcon />} label={language} color={chipColour(language)} />
                 </Stack>
