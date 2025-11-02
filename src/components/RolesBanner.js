@@ -14,7 +14,7 @@ export default function RolesBanner() {
     }, []);
 
     return (
-        <Stack direction='row' alignItems={'center'} justifyContent={'space-around'}>
+        <Stack direction='row' width={'100%'} alignItems={'center'} justifyContent={'space-around'}>
             <Typography variant="button"> 
                 User Researcher
             </Typography>

@@ -10,7 +10,7 @@ const Games = () => {
                 <Grid size={6}>
                     <GameCard
                         title="DreamScape"
-                        description="A text-based adventure game made with Java. The player navigates through a dream world, collecting special items, to find a way back to reality."
+                        description="A text-based adventure game where the player navigates through a dream world, collecting special items to find a way back to reality before they lose their strength."
                         image="/dreamscape.png"
                         alt="DreamScape"
                         link="https://github.com/rita-costa/dreamscape-game"
@@ -23,7 +23,7 @@ const Games = () => {
                 <Grid size={6}>
                     <GameCard
                         title="Dragon Game"
-                        description="A text-based battle game made with Python. The player battles dragons with their own dragon, using different attacks and strategies."
+                        description="A text-based battle game inspired by Pokemon and How to Train Your Dragon, the player controls their own dragon to defeat others and reach the final island."
                         image="/dragon.png"
                         alt="Dragon Game"
                         link="https://github.com/rita-costa/dragon-game"
@@ -34,14 +34,14 @@ const Games = () => {
                     />
                 </Grid>
 
-                <Grid size={12}>
-                    <Typography variant="h6" align="center">
+                <Grid size={12} align="left">
+                    <Typography variant="h6" >
                         Why are these games here?
                     </Typography>
 
-                    <Typography variant="body1" align="center">
-                        While I am not a game developer, I have always enjoyed creating games as a creative practice and to develop my programming skills.
-                        Throughout my life, games have been powerful tools for meaningful experiences and storytelling, which is why I am interested in the field.
+                    <Typography variant="body1">
+                        While I am not a game developer, I have always enjoyed coding games as a creative practice and to develop my programming skills.
+                        Throughout my life, games have been powerful tools for meaningful reflection and storytelling, which is why I am interested in the field.
                     </Typography>
                 </Grid>
             </Grid>

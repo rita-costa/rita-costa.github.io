@@ -25,11 +25,11 @@ export default function GameCard({title, description, image, alt, link, language
                 p: 1
             }}>
 
-                <Stack direction='row' spacing={1}>
-                <Typography variant="h6" component="h2" align="left">
-                    <span class="title">{title}</span>
-                </Typography>
-                <Chip size='small' icon={<CodeIcon />} label={language} color={chipColour(language)} />
+                <Stack direction='column' spacing={0}>
+                    <Typography variant="h6" component="h2" align="left">
+                        <span class="title">{title}</span>
+                    </Typography>
+                    <Chip size='small' icon={<CodeIcon />} label={language} color={chipColour(language)} style={{width: 'min-content'}} />
                 </Stack>
                 
                 <Stack>

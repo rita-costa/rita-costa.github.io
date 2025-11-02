@@ -1,9 +1,10 @@
 import { Stack, Typography } from "@mui/material";
+import { Link } from 'react-router-dom';
 
-export default function GameCard({title, image, alt, date, origin, colour, skills, outcome}) {
+export default function ProjectCard({title, image, alt, date, origin, colour, skills, outcome, link}) {
 
     return (
-        <Stack sx={{ minHeight: 400, minWidth: 275, p: 1, bgcolor: colour ? colour : 'primary.main'  }}>
+        <Stack sx={{ minHeight: 400, minWidth: 275, p: 1, bgcolor: colour ? colour : 'primary.main'  }} component={Link} to={link ? link : ''}>
             <img src={image} alt={alt} style={{height: 220, width: '100%', objectFit: 'cover'}} />
             <Stack direction="column" spacing={2} sx={{
                 justifyContent: "space-between",
