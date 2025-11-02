@@ -1,6 +1,9 @@
 * {
- background-color: #FEFDFD;
  color: #371623;
+}
+
+#root {
+  background-color: #FEFDFD;
 }
 
 .App {

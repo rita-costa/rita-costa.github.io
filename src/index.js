@@ -12,6 +12,7 @@ import Projects from './routes/Projects';
 import Games from './routes/Games';
 import Root from './routes/Root';
 import ErrorPage from './routes/ErrorPage';
+import Verifone from './routes/projects/Verifone';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -36,6 +37,10 @@ const router = createHashRouter([
       {
         path: "/games",
         element: <Games />,
+      },
+      {
+        path: "projects/Verifone",
+        element: <Verifone />
       }
     ]
   }

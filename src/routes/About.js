@@ -13,8 +13,8 @@ export default function About () {
 
                 <div style={{textAlign: 'left'}}>
                 I'm a UX researcher and designer with a background in software engineering, who recently completed a Human-Computer Interaction MSc at UCL.
-                I'm passionate about building accessible, inclusive, and meaningful technology, with a special interest in games and mental health.
-                With experiences in front-end web development and a Computer Science degree, I bring a unique perspective to UX that I'm eager to expand! 🪴
+                I'm passionate about building accessible, inclusive, and meaningful digital experiences, with a special interest in games and mental health.
+                With experience in front-end web development and a Computer Science degree, I bring a unique perspective to UX that I'm eager to expand! 🪴
                 </div>
 
                 <RolesBanner />
