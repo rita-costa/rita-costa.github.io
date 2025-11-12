@@ -1,20 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider } from '@mui/material/styles';
-import theme from './theme';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
-import Home from './routes/Home';
-import About from './routes/About';
-import Projects from './routes/Projects';
-import Games from './routes/Games';
-import Root from './routes/Root';
-import ErrorPage from './routes/ErrorPage';
-import Verifone from './routes/projects/Verifone';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./theme";
+import { createHashRouter, RouterProvider } from "react-router-dom";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Projects from "./routes/Projects";
+import Games from "./routes/Games";
+import Root from "./routes/Root";
+import ErrorPage from "./routes/ErrorPage";
+import Verifone from "./routes/projects/Verifone";
+import TTRPGs from "./routes/projects/TTRPGs";
+import Wind from "./routes/projects/Wind";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createHashRouter([
   {
@@ -39,11 +41,19 @@ const router = createHashRouter([
         element: <Games />,
       },
       {
-        path: "projects/Verifone",
-        element: <Verifone />
-      }
-    ]
-  }
+        path: "/projects/Verifone",
+        element: <Verifone />,
+      },
+      {
+        path: "/projects/Wind",
+        element: <Wind />,
+      },
+      {
+        path: "/projects/TTRPGs",
+        element: <TTRPGs />,
+      },
+    ],
+  },
 ]);
 
 root.render(
@@ -52,7 +62,10 @@ root.render(
       <meta name="viewport" content="initial-scale=1, width=device-width" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"
+      />
     </head>
     <ThemeProvider theme={theme}>
       <CssBaseline />
