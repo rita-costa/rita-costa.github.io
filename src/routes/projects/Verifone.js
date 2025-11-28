@@ -3,7 +3,7 @@ import { Stack, Typography, Button } from "@mui/material";
 import Body from "../../components/Typography/Body";
 import Heading1 from "../../components/Typography/Heading1";
 import Heading2 from "../../components/Typography/Heading2";
-import ProjectContextBox from "../../components/ProjectContextBox";
+import ProjectContextBox from "../../components/ProjectBox";
 import ProjectTitle from "../../components/ProjectTitle";
 
 export default function Verifone() {
@@ -12,7 +12,7 @@ export default function Verifone() {
       <ProjectTitle
         title="Verifone: Building Trust in the Second Hand Phone Market"
         info="CHI 2024 Student Design Competition Finalist"
-        skills="User Research, UX Design, Academic Writing"
+        skills={["User Research", "UX Design", "Academic Writing"]}
       />
 
       {/* Context Box */}

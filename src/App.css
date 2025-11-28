@@ -1,11 +1,21 @@
+@font-face {
+  font-family: "PixelOperator";
+  src: url(../public/PixelOperator8.ttf);
+}
+
 * {
- color: #371623;
+  color: #ffffff;
 }
 
 #root {
-  background-color: #FEFDFD;
+  background-color: #0a0218;
+  padding: 60px 120px;
 }
 
-.App {
-  text-align: center;
+#header-name {
+  font-family: "PixelOperator";
+  color: #a684ff;
+  line-height: 1;
+  letter-spacing: 0px;
+  display: inline-block;
 }

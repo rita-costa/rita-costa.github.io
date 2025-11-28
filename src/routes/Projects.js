@@ -10,9 +10,9 @@ const Projects = () => {
       style={{ display: "flex", alignItems: "center", minHeight: "80vh" }}>
       <Grid
         container
-        spacing={1}
+        spacing={2}
         justifyContent="left"
-        rowSpacing={1}
+        rowSpacing={2}
         sx={{ mb: 10 }}>
         <Grid size={6}>
           <FirstProjectCard />

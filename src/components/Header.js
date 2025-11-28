@@ -40,19 +40,26 @@ export default function Header() {
         mb: theme.spacing(5),
       }}>
       <Box
-        sx={{ pl: theme.spacing(2), pt: theme.spacing(1) }}
+        sx={{
+          pl: theme.spacing(2),
+          pt: theme.spacing(1),
+        }}
         component={Link}
         to="/"
         onClick={(e) => handleChange(e, "1")}>
-        <img src="/name-logo.jpg" alt="logo" style={{ height: "50px" }} />
+        <span id="header-name">
+          RITA
+          <br />
+          COSTA
+        </span>
       </Box>
 
       <Tabs
         value={value}
         onChange={handleChange}
         aria-label="lab API tabs example"
-        textColor="secondary"
-        indicatorColor="secondary"
+        textColor="primary"
+        indicatorColor="primary"
         sx={{ marginLeft: "auto", alignItems: "flex-end" }}>
         <Tab disableRipple component={Link} to="/" label="Home" value="1" />
         <Tab

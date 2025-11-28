@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Stack, Typography } from "@mui/material";
 import Heading1 from "../../components/Typography/Heading1";
 import Heading2 from "../../components/Typography/Heading2";
-import ProjectContextBox from "../../components/ProjectContextBox";
+import ProjectContextBox from "../../components/ProjectBox";
 import ProjectTitle from "../../components/ProjectTitle";
 import Body from "../../components/Typography/Body";
 
@@ -12,7 +12,11 @@ export default function TTRPGs() {
       <ProjectTitle
         title="Creating a Wind Energy Analysis Tool"
         info="Product Design Graduate @ BP - 2025"
-        skills="End-to-End UI and UX Design, Front-End Engineering, User Testing"
+        skills={[
+          "End-to-End UI and UX Design",
+          "Front-End Engineering",
+          "User Testing",
+        ]}
       />
 
       {/* Context Box */}

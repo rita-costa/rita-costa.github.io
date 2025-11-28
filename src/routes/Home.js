@@ -11,8 +11,8 @@ const Home = () => {
           direction="row"
           spacing={10}
           alignItems={"center"}
-          sx={{ height: "80vh" }}>
-          <img src="/head.png" alt="logo" style={{ height: "400px" }} />
+          sx={{ height: "65vh" }}>
+          <img src="/Icon-Dark.svg" alt="logo" style={{ height: "400px" }} />
 
           <Stack gap={2}>
             <Stack direction="row" spacing={3} alignItems={"center"}>
@@ -32,7 +32,7 @@ const Home = () => {
               align="left"
               sx={{
                 b: {
-                  textDecoration: "underline #DEA5BC",
+                  textDecoration: "underline #58438B",
                 },
               }}>
               Hi there! I'm Rita, a <b>UX researcher</b> with a background in

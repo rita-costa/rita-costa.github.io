@@ -3,7 +3,11 @@ import { Typography } from "@mui/material";
 
 export default function Heading1({ children }) {
   return (
-    <Typography variant="body1" component="h3" align="left">
+    <Typography
+      variant="h4"
+      component="h1"
+      align="left"
+      style={{ marginTop: "80px" }}>
       <b>{children}</b>
     </Typography>
   );

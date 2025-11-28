@@ -5,11 +5,12 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   cssVariables: true,
   palette: {
+    mode: "dark",
     primary: {
-      main: "#B43065",
+      main: "#A684FF",
     },
     secondary: {
-      main: "#B43065",
+      main: "#A684FF",
     },
     error: {
       main: red.A400,
