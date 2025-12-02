@@ -58,7 +58,7 @@ const Projects = () => {
           />
         </Grid>
 
-        <Grid size={6}>
+        {/* <Grid size={6}>
           <ProjectCard
             title="Designing a Web App for In-Situ Support of Parent-Child Conflict"
             image="/dreamscape.png"
@@ -82,7 +82,7 @@ const Projects = () => {
             skills="UX Design, Frontend Development, Academic Writing"
             outcome="83%"
           />
-        </Grid>
+        </Grid> */}
       </Grid>
     </Container>
   );
