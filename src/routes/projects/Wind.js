@@ -94,6 +94,10 @@ export default function TTRPGs() {
           marginTop: "2rem",
         }}>
         <Heading1>Process</Heading1>
+        <Body sx={{ mt: "-1rem" }}>
+          [NOTE: Due to the confidential nature of this project, images are
+          purposefully low-fidelity and do not show the final UI design.]
+        </Body>
         <Heading2>Key pain points</Heading2>
 
         <Stack direction="row" width="100%" alignItems="center" spacing={4}>

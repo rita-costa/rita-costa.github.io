@@ -76,13 +76,13 @@ export default function Header() {
           label="My Work"
           value="3"
         />
-        <Tab
+        {/* <Tab
           disableRipple
           component={Link}
           to="/games"
           label="Games"
           value="4"
-        />
+        /> */}
       </Tabs>
     </Stack>
   );

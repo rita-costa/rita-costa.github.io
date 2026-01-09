@@ -48,7 +48,7 @@ const Projects = () => {
         <Grid size={6}>
           <ProjectCard
             title="Creating a Wind Energy Analysis Tool"
-            image="/howpplplay.png"
+            image="/Wind/ReprioritisedFlows.png"
             alt="Wind Analysis Tool"
             date="2025"
             origin="Product Design Graduate @ BP"
